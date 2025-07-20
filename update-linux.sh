@@ -1,8 +1,7 @@
-#! /bin/bash
-
 echo "Starting the update process..."
 set -e
-echo "Ollama needs to be updated manually on MacOS. Please use the Ollama application to update it."
+echo "Updating Ollama ..."
+curl -fsSL https://ollama.com/install.sh | sh
 
 echo "Updating Docker containers ..."
 docker run --rm \
